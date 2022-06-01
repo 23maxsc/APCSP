@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a class="active" href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </head>
+  <body class="b">
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Projects</h1>
+      </div>
+    </div>
+    <p class="d"> This is my projects page. Scroll down the page to see what projects I have worked on.</p>
+        
+    <table>
+      <tr> 
+        <td><img class="image2" src = "Maker'sFaire1.jpg">
+        <img class="image2" src = "Maker'sFaire2.jpg">
+        <img class="image2" src = "Maker'sFaire_closeimage1.jpg">
+
+         </td>
+        <td style="width:50%"> 
+          <h3>2022 Piedmont Maker's Faire</h3>
+          <p>For this project, I combined my interests in computer science, physics, and golf.</p>
+          <p>The purpose of this project was to create a device that could record the first meter of the golf ball's flight and from that data determine the trajectory of the ball's flight. There are several components to the project. First there is a laser, which when blocked (in the correct sequence) triggers camera to turn on. The LEDs that flash the ball to create more higher resolution images. All components are connected to a raspberry pi. When the program finishes, a plot of the calculated trajectory of the ball is displayed.</p>
+          <p>The trajectory of the ball is calculated using a numerical solution involving fluid dynamics and projectile motion.The forces acting on the ball are lift, drag, and gravity. However, lift and drag are dependent on the velocity of the ball at any point of time. To solve for the trajectory, we must know the innitial launch angle, velocity, and spin-rate of the ball (wich are determined using image recognition using data detected by the camera). After knowing the initial launch angle, velocity, and spin-rate, we must sequentialy itterate through each value of time, suming forces and using constants to find the acceleration of the ball.
+          </p>
+          <p> Go to this link to see the proccess I used to calculate the trajectory of the ball: <a href="https://docs.google.com/spreadsheets/d/19Vf4vdDbNQgMrLzRLIg3_rciE62a2cx_0RfertWzox0/edit?usp=sharing">link</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="image">
+          <video width="320" height="240" controls>
+          <source src="CreatePTtask.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>
+            open code: <a href="file:///C:/Users/23maxsc/Documents/MS_APCSP/CreatePTCode3.pdf">CreatePTCode</a>
+          </p>
+        </td>
+        <td style="width:50%">
+          <h3>APCSP Create Task</h3>
+          <p>
+            I completed this project as a part of my APCSP class this year. It is correlated with my maker's faire project above exept this project is much smaller. The program requires user inputed values for ball speed, launch angle, and spin-rate. Also, this project was written using javascript and my maker's faire project was written using python. I used what I learned from this project to make the code to determine the trajectory of the ball in my maker's faire project.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+   
+  </body>
+</html>
